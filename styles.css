@@ -1,0 +1,45 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+body {
+	display: grid;
+	grid-template-rows: 1fr 10fr;
+	background-color: #F0DAB5;
+}
+
+h1 {
+	font-size: 50px;
+	margin: 3% auto;
+}
+
+#game-type-form {
+	width: 280px;
+	height: 155px;
+	margin: auto;
+	padding: 1%;
+	border: 2px solid black;
+	background: #b58763;
+	display: grid;
+	grid-template-columns: 125px 100px 50px;
+	grid-template-rows: 40px 30px 100px;
+}
+
+#game-type-form select, input {
+  box-sizing: border-box;
+	padding: 0;
+	height: 2em;
+}
+
+#game-type-form button {
+	grid-column: 1 / 4;
+	margin: 10%;
+}
+
+#main-canvas {
+	position: fixed;
+	display: block;
+	width: 100%;
+	height: 100%;
+}
