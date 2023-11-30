@@ -24,10 +24,10 @@ async function async_main() {
 		let player_type = WasmPlayerType.new(WasmPlayerEnum.Player);
 		switch (submit_button_id) {
 			case "play-as-white":
-				main(player_type, ai_player_type);
+				main(player_type, ai_player_type, false);
 				break;
 			case "play-as-black":
-				main(ai_player_type, player_type);
+				main(ai_player_type, player_type, true);
 				break;
 			default:
 				console.error("unreachable");

@@ -237,13 +237,14 @@ function _assertClass(instance, klass) {
 /**
 * @param {WasmPlayerType} white
 * @param {WasmPlayerType} black
+* @param {boolean} board_initially_flipped
 */
-__exports.main = function(white, black) {
+__exports.main = function(white, black, board_initially_flipped) {
     _assertClass(white, WasmPlayerType);
     var ptr0 = white.__destroy_into_raw();
     _assertClass(black, WasmPlayerType);
     var ptr1 = black.__destroy_into_raw();
-    wasm.main(ptr0, ptr1);
+    wasm.main(ptr0, ptr1, board_initially_flipped);
 };
 
 function handleError(f, args) {
@@ -1046,23 +1047,23 @@ function __wbg_get_imports() {
         return ret;
     }, arguments) };
     imports.wbg.__wbindgen_closure_wrapper233 = function(arg0, arg1, arg2) {
-        const ret = makeMutClosure(arg0, arg1, 51, __wbg_adapter_24);
+        const ret = makeMutClosure(arg0, arg1, 52, __wbg_adapter_24);
         return addHeapObject(ret);
     };
     imports.wbg.__wbindgen_closure_wrapper242 = function(arg0, arg1, arg2) {
-        const ret = makeMutClosure(arg0, arg1, 51, __wbg_adapter_24);
+        const ret = makeMutClosure(arg0, arg1, 52, __wbg_adapter_24);
         return addHeapObject(ret);
     };
     imports.wbg.__wbindgen_closure_wrapper244 = function(arg0, arg1, arg2) {
-        const ret = makeMutClosure(arg0, arg1, 51, __wbg_adapter_24);
+        const ret = makeMutClosure(arg0, arg1, 52, __wbg_adapter_24);
         return addHeapObject(ret);
     };
     imports.wbg.__wbindgen_closure_wrapper246 = function(arg0, arg1, arg2) {
-        const ret = makeMutClosure(arg0, arg1, 51, __wbg_adapter_31);
+        const ret = makeMutClosure(arg0, arg1, 52, __wbg_adapter_31);
         return addHeapObject(ret);
     };
-    imports.wbg.__wbindgen_closure_wrapper822 = function(arg0, arg1, arg2) {
-        const ret = makeMutClosure(arg0, arg1, 51, __wbg_adapter_24);
+    imports.wbg.__wbindgen_closure_wrapper823 = function(arg0, arg1, arg2) {
+        const ret = makeMutClosure(arg0, arg1, 52, __wbg_adapter_24);
         return addHeapObject(ret);
     };
 
