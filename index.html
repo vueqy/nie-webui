@@ -18,25 +18,11 @@
 		<h1>Web UI of the nie chess engine</h1>
 
 		<form id="game-type-form">
-			<label for="white-type-selector">White Player:</label>
-			<select required name="white-type-selector">
-				<option hidden disabled selected value>-- select --</option>
-				<option value="user">Player</option>
-				<option value="ai-movetime">Movetime AI</option>
-				<option value="ai-depth">Depth AI</option>
-			</select>
-			<input disabled type="number" name="white-args">
+			<label for="ai-movetime">AI time per move [seconds]:</label>
+			<input required type="number" min="0" step="any" name="ai-movetime">
 
-			<label for="black-type-selector">Black Player:</label>
-			<select required name="black-type-selector">
-				<option hidden disabled selected value>-- select --</option>
-				<option value="user">Player</option>
-				<option value="ai-movetime">Movetime AI</option>
-				<option value="ai-depth">Depth AI</option>
-			</select>
-			<input disabled type="number" name="black-args">
-
-			<button type="submit">Start Game</button>
+			<button type="submit" id="play-as-white">Play as White</button>
+			<button type="submit" id="play-as-black">Play as Black</button>
 		</form>
 	</body>
 </html>
